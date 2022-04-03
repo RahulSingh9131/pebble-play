@@ -1,0 +1,34 @@
+@media screen and (max-width: 870px){
+    header .logo .brand-name{
+        display: inline-block ;
+        font-size: var(--h1-font-size);
+    }
+    .header .brand-name
+    {
+        display: inline-block;
+        font-size: var(--h3-font-size);
+    }
+    .header .nav-links{
+        display: inline-block;
+        font-size: var(--smaller-font-size);
+    }
+    .nav-links :link{
+        font-size: var(--normal-font-size);
+        margin-right: var(--mb-0-75);
+    }
+    .showcase-area .right-side::before{
+        margin-left: var(--mb-1-5);
+        width: 10rem;
+        height: 10rem;
+    }
+    .showcase-area .big-title{
+        font-size: var(--normal-font-size) !important;
+    }
+    .heading span{
+        font-size: var(--small-font-size);
+        background: var(--simple);
+        padding: .1rem .3rem;
+        border-radius: .3rem;
+    }
+   
+}
