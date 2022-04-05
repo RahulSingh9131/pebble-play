@@ -16,13 +16,13 @@
         font-size: var(--normal-font-size);
         margin-right: var(--mb-0-75);
     }
-    .showcase-area .right-side::before{
-        margin-left: var(--mb-1-5);
-        width: 10rem;
-        height: 10rem;
+    .home .controls .img-btn{
+        height: 1rem;
+        width: 1rem;
+        display: inline-block;
     }
-    .showcase-area .big-title{
-        font-size: var(--normal-font-size) !important;
+    .home .controls{
+        padding: .7rem;
     }
     .heading span{
         font-size: var(--small-font-size);
