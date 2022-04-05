@@ -1,0 +1,27 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+.header{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.header h1{
+    font-family: var(--brand-font);
+    font-size: var(--h1-font-size);
+    color: var(--white-color);
+}
+.header .header-nav-icons{
+    font-size: 2px !important;
+    margin: 0 var(--mb-0-75);
+    cursor: pointer;
+}
+
+.videopage-body .container{
+    display: flex;
+    margin: 0 2.5rem;
+}
+.videopage-body{
+    margin-top: var(--mb-2-5);
+}

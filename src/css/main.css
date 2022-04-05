@@ -2,5 +2,8 @@
 @import url("./utils.css");
 @import url("./variables.css");
 @import url("./screens/home.css");
+@import url("./screens/videopage.css");
+@import url("./screens/sidebar.css");
+@import url("./screens/videocard.css");
 
 @import url("./mediaQueries.css");

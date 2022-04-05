@@ -1,0 +1,14 @@
+.sidebar{
+    padding: 7px;
+    border-radius: 1rem;
+    position: absolute;
+    left: 1rem;
+    /* background-color: ; */
+}
+.sidebar-contents{
+    margin: var(--mb-1) 0;
+}
+.sidebar-contents:hover{
+    color: var(--red-color);
+    cursor: pointer;
+}
