@@ -26,7 +26,7 @@ function VideoPage() {
   return (
     <div className='videopage'>
         <Header/>
-        <div className='videopage-body'>
+        <section className='videopage-body'>
           <div className='container'>
             <Sidebar/>
             <div className='flex flex-wrap'>
@@ -37,7 +37,13 @@ function VideoPage() {
               })}
             </div>
           </div>
-        </div>
+        </section>
+        <footer className="bottom-area">
+            <div className="container">
+                <p>Designed and built with love. </p>
+                <small>© Rahul Singh</small>
+            </div>
+        </footer>
     </div>
   )
 }
