@@ -3,7 +3,6 @@
     border-radius: 1rem;
     position: absolute;
     left: 1rem;
-    /* background-color: ; */
 }
 .sidebar-contents{
     margin: var(--mb-1) 0;
