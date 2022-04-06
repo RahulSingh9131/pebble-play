@@ -9,7 +9,7 @@ function VideoCard({_id,image,title,views,timestamp,category}) {
     <div className='videocard' key={_id}>
         <img className='videocard-thumbnail' src={image} alt=""/>
         <div className='videocard-info'>
-            <Avatar className="videocard-avatar" src={image} alt={image}/>
+            <Avatar className="videocard-avatar" src={image} alt={title}/>
             <ThumbUpOutlinedIcon className="videocard-like"/>
             <div className="videocard-text">
                 <h4>{title}</h4>
