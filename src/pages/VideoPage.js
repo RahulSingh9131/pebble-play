@@ -14,7 +14,8 @@ function VideoPage() {
       const res= await axios.get("/api/videos")
       setVideo(res.data.videos)
     }catch(e){
-      alert("please check the api endpoints again...")
+      alert("request failed...try again");
+      console.log(e);
     }
   }
 
