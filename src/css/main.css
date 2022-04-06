@@ -5,5 +5,7 @@
 @import url("./screens/videopage.css");
 @import url("./screens/sidebar.css");
 @import url("./screens/videocard.css");
+@import url("./screens/watchlater.css");
+@import url("./screens/watchcard.css");
 
 @import url("./mediaQueries.css");
