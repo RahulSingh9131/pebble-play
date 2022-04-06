@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react'
+import Footer from '../components/Footer';
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar';
 import WatchCard from '../components/WatchCard';
@@ -27,12 +28,7 @@ function Likepage() {
             </div>
           </div>
         </section>
-        <footer className="bottom-area">
-            <div className="container">
-                <p>Designed and built with love. </p>
-                <small>© Rahul Singh</small>
-            </div>
-        </footer>
+        <Footer/>
     </div>
   )
 }

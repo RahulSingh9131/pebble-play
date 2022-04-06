@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Sidebar from '../components/Sidebar';
 import VideoCard from '../components/VideoCard';
 import "../css/main.css";
+import Footer from '../components/Footer';
 
 function VideoPage() {
 
@@ -39,12 +40,7 @@ function VideoPage() {
             </div>
           </div>
         </section>
-        <footer className="bottom-area">
-            <div className="container">
-                <p>Designed and built with love. </p>
-                <small>© Rahul Singh</small>
-            </div>
-        </footer>
+        <Footer/>
     </div>
   )
 }
