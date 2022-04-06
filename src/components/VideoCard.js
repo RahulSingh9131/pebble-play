@@ -7,7 +7,7 @@ import "../css/main.css";
 function VideoCard({_id,image,title,views,timestamp,category}) {
   return (
     <div className='videocard' key={_id}>
-        <img className='videocard-thumbnail' src={image} alt=""/>
+        <img className='videocard-thumbnail' src={image} alt={title}/>
         <div className='videocard-info'>
             <Avatar className="videocard-avatar" src={image} alt={title}/>
             <ThumbUpOutlinedIcon className="videocard-like"/>
