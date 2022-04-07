@@ -5,12 +5,11 @@ import Sidebar from '../components/Sidebar';
 import WatchCard from '../components/WatchCard';
 import { useWatch } from '../context/WatchContext'
 import "../css/main.css";
+import useDocumentTitle from './useDocumentTitle';
 
 function WatchLater() {
 
-    useEffect(()=>{
-        document.title="watchlater";
-    },[])
+   useDocumentTitle("watchLater");
 
     const {watchState:{watchBasket}}=useWatch();
 

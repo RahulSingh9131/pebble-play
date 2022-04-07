@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import {Link} from "react-router-dom";
 import "../css/main.css";
+import useDocumentTitle from './useDocumentTitle';
 
 function Homepage() {
 
@@ -18,6 +19,7 @@ function Homepage() {
     }
 
     useEffect(()=>fetchCategory(),[]);
+    useDocumentTitle("homePage");
 
     useEffect(()=>{
         let imgBtn=document.querySelectorAll('.img-btn');

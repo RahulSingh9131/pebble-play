@@ -5,6 +5,7 @@ import Sidebar from '../components/Sidebar';
 import VideoCard from '../components/VideoCard';
 import "../css/main.css";
 import Footer from '../components/Footer';
+import useDocumentTitle from './useDocumentTitle';
 
 function VideoPage() {
 
@@ -21,9 +22,7 @@ function VideoPage() {
   }
 
   useEffect(()=>fetchVideo(),[]);
-  useEffect(()=>{
-    document.title="videoPage";
-  },[])
+  useDocumentTitle("videoPage");
 
   return (
     <div className='videopage'>

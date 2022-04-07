@@ -5,12 +5,11 @@ import Sidebar from '../components/Sidebar';
 import WatchCard from '../components/WatchCard';
 import { useLike } from '../context/LikeContext';
 import "../css/main.css";
+import useDocumentTitle from './useDocumentTitle';
 
 function Likepage() {
-    useEffect(()=>{
-        document.title="likepage";
-    },[])
-
+   
+    useDocumentTitle("likePage");
     const {likeState:{likeBasket}}=useLike();
 
   return (
