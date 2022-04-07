@@ -3,24 +3,23 @@ import Footer from '../components/Footer';
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar';
 import WatchCard from '../components/WatchCard';
-import { useWatch } from '../context/WatchContext'
+import { useLike } from '../context/LikeContext';
 import "../css/main.css";
 import useDocumentTitle from './useDocumentTitle';
 
-function WatchLater() {
-
-   useDocumentTitle("watchLater");
-
-    const {watchState:{watchBasket}}=useWatch();
+function Likepage() {
+   
+    useDocumentTitle("likePage");
+    const {likeState:{likeBasket}}=useLike();
 
   return (
-    <div className='watchlater'>
+    <div className='likepage'>
         <Header/>
-        <section className='watchlater-body'>
+        <section className='likepage-body'>
           <div className='container'>
             <Sidebar/>
             <div className='flex flex-wrap'>
-              {watchBasket && watchBasket.map(({_id,image,title,timestamp,views,category})=>{
+              {likeBasket && likeBasket.map(({_id,image,title,timestamp,views,category})=>{
                 return (
                   <WatchCard _id={_id} image={image} title={title} timestamp={timestamp} views={views} category={category} />
                 )
@@ -33,4 +32,4 @@ function WatchLater() {
   )
 }
 
-export default WatchLater
+export default Likepage

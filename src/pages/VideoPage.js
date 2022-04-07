@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import Sidebar from '../components/Sidebar';
 import VideoCard from '../components/VideoCard';
 import "../css/main.css";
+import Footer from '../components/Footer';
+import useDocumentTitle from './useDocumentTitle';
 
 function VideoPage() {
 
@@ -20,9 +22,7 @@ function VideoPage() {
   }
 
   useEffect(()=>fetchVideo(),[]);
-  useEffect(()=>{
-    document.title="videoPage";
-  },[])
+  useDocumentTitle("videoPage");
 
   return (
     <div className='videopage'>
@@ -39,12 +39,7 @@ function VideoPage() {
             </div>
           </div>
         </section>
-        <footer className="bottom-area">
-            <div className="container">
-                <p>Designed and built with love. </p>
-                <small>© Rahul Singh</small>
-            </div>
-        </footer>
+        <Footer/>
     </div>
   )
 }

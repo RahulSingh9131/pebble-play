@@ -17,7 +17,9 @@ function Sidebar() {
           </Link>
         </div>
         <div className="sidebar-contents">
+          <Link className='sidebar-links' to="/likepage">
             <ThumbUpOutlinedIcon/>
+          </Link>
         </div>
     </div>
   )
