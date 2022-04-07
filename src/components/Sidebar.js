@@ -9,7 +9,9 @@ function Sidebar() {
   return (
     <div className='sidebar'> 
         <div className='sidebar-contents'>
+          <Link className='sidebar-links' to="/historypage">
             <HistoryIcon/>
+          </Link>
         </div>
         <div className='sidebar-contents'>
           <Link className='sidebar-links' to="/watchlater">
