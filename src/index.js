@@ -6,6 +6,7 @@ import { makeServer } from "./server";
 import {BrowserRouter as Router} from "react-router-dom";
 import { WatchProvider } from "./context/WatchContext";
 import { LikeProvider } from "./context/LikeContext";
+import { HistoryProvider } from "./context/HistoryContext";
 
 // Call make Server
 makeServer();
@@ -15,7 +16,9 @@ ReactDOM.render(
     <Router>
       <WatchProvider>
         <LikeProvider>
-          <App />
+          <HistoryProvider>
+            <App />
+          </HistoryProvider>
         </LikeProvider>
       </WatchProvider>
     </Router>

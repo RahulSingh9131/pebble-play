@@ -1,6 +1,8 @@
 import { WatchLaterOutlined } from '@mui/icons-material';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import { Avatar } from '@mui/material';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,12 +10,14 @@ import React from 'react';
 import { useWatch } from '../context/WatchContext';
 import "../css/main.css";
 import { useLike } from '../context/LikeContext';
+import { useHistory } from '../context/HistoryContext';
 
 function VideoCard(videos) {
   const {_id,image,title,views,timestamp,category}=videos;
   
   const {watchState:{watchBasket},watchDispatch}=useWatch();
   const {likeState:{likeBasket},likeDispatch}=useLike();
+  const {historyState:{historyBasket},historyDispatch}=useHistory();
  
   const watchLater=()=>{
     watchDispatch({type:"ADD_TO_WATCHLATER",payload:videos})
@@ -30,6 +34,13 @@ function VideoCard(videos) {
   return (
     <div className='videocard' key={_id}>
         <img className='videocard-thumbnail' src={image} alt={title}/>
+        {
+          historyBasket.some((c)=>c._id===videos._id)?(
+            <PlayArrowIcon className='videocard-play filled-play'/>
+          ):(
+            <PlayCircleIcon className='videocard-play' onClick={()=>historyDispatch({type:"ADD_TO_HISTORY",payload:videos})}/>
+          )
+        }
         <div className='videocard-info'>
             <Avatar className="videocard-avatar" src={image} alt={title}/>
             {

@@ -62,3 +62,17 @@
 .filled-like{
     color: var(--red-color);
 }
+.videocard-play{
+    position: absolute;
+    right: 140px;
+    top: 50px;
+    cursor: pointer;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 5px ;
+    border-radius: 5px;
+    background: var(--white-color);
+}
+.filled-play{
+    background-color: var(--red-color);
+}
