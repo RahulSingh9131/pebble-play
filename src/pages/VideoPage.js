@@ -6,10 +6,14 @@ import VideoCard from '../components/VideoCard';
 import "../css/main.css";
 import Footer from '../components/Footer';
 import useDocumentTitle from './useDocumentTitle';
+import PlaylistModal from '../components/PlaylistModal';
+import { usePlaylist } from '../context/PlaylistContext';
 
 function VideoPage() {
 
   const [video,setVideo]=useState([]);
+  const {showModal}=usePlaylist();
+
 
   const fetchVideo= async ()=>{
     try{
@@ -36,6 +40,7 @@ function VideoPage() {
                   <VideoCard _id={_id} image={image} title={title} timestamp={timestamp} views={views} category={category} />
                 )
               })}
+            <PlaylistModal show={showModal}></PlaylistModal>
             </div>
           </div>
         </section>

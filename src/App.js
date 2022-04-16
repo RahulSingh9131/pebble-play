@@ -6,12 +6,16 @@ import VideoPage from "./pages/VideoPage";
 import WatchLater from "./pages/WatchLater";
 import Likepage from "./pages/Likepage";
 import HistoryPage from "./pages/HistoryPage";
+import PlaylistPage from "./pages/PlaylistPage";
+import SinglePlaylistPage from "./pages/SinglePlaylistPage";
 
 
 function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path="/playlist" element={<PlaylistPage/>}/>
+        <Route path="/playlist/:playId" element={<SinglePlaylistPage/>}/>
         <Route path="/historypage" element={<HistoryPage/>}/>
         <Route path="/likepage" element={<Likepage/>}/>
         <Route path="/watchlater" element={<WatchLater/>}/>

@@ -3,6 +3,7 @@ import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
 import { Avatar } from '@mui/material';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +12,7 @@ import { useWatch } from '../context/WatchContext';
 import "../css/main.css";
 import { useLike } from '../context/LikeContext';
 import { useHistory } from '../context/HistoryContext';
+import { usePlaylist } from '../context/PlaylistContext';
 
 function VideoCard(videos) {
   const {_id,image,title,views,timestamp,category}=videos;
@@ -18,6 +20,7 @@ function VideoCard(videos) {
   const {watchState:{watchBasket},watchDispatch}=useWatch();
   const {likeState:{likeBasket},likeDispatch}=useLike();
   const {historyState:{historyBasket},historyDispatch}=useHistory();
+  const {showModal,setShowModal,setModalItem}=usePlaylist();
  
   const watchLater=()=>{
     watchDispatch({type:"ADD_TO_WATCHLATER",payload:videos})
@@ -51,7 +54,10 @@ function VideoCard(videos) {
               )
             }
             <div className="videocard-text">
-                <h4>{title}</h4>
+              <div className='flex justify-space'>
+                <PlaylistAddIcon className='videocard-playlist' onClick={()=>{setShowModal(true); setModalItem(videos);}}/>
+              </div>
+              <h4>{title}</h4>
                 <p>{category}</p>
                 <p>
                     {views} * {timestamp}

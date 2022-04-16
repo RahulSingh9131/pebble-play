@@ -1,0 +1,46 @@
+.videoinlist{
+    margin-bottom: 40px;
+    width: 270px;
+    position: relative;
+}
+.videoinlist-thumbnail{
+    height: 140px;
+    width: 250px;
+}
+.videoinlist-thumbnail:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.videoinlist-info{
+    display: flex;
+    padding-top: 10px;
+}
+.videoinlist-text{
+    margin-left: 10px;
+}
+.videoinlist-text h4{
+    margin-bottom: 5px;
+    font-size: var(--normal-font-size);
+}
+.videoinlist-text p{
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+}
+.videoinlist-avatar{
+    height: 30px !important;
+    width: 30px !important;
+}
+.videoinlist-delete{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+.videoinlist-delete:hover{
+    color: var(--red-color);
+}

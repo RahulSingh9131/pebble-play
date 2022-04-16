@@ -36,5 +36,16 @@
     .sidebar-contents .sidebar-links{
         display: inline-block;
     }
-   
+    .playlist-input-body{
+        width: 15rem;
+    }
+    .playlist-input-body>button{
+        padding: 3px;
+    }
+    .playlist-btn{
+        padding: .5rem 1rem;
+    }
+    .playlistcard :link{
+        display: inline-block;
+    }
 }

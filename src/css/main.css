@@ -9,5 +9,9 @@
 @import url("./screens/watchcard.css");
 @import url("./screens/likepage.css");
 @import url("./screens/historypage.css");
+@import url("./screens/playlistpage.css");
+@import url("./screens/playlistcard.css");
+@import url("./screens/playlistmodal.css");
+@import url("./screens/videoinlist.css");
 
 @import url("./mediaQueries.css");
