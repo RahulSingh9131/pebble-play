@@ -13,5 +13,8 @@
 @import url("./screens/playlistcard.css");
 @import url("./screens/playlistmodal.css");
 @import url("./screens/videoinlist.css");
+@import url("./screens/login.css");
+@import url("./screens/signup.css");
+@import url("./screens/logout.css");
 
 @import url("./mediaQueries.css");
