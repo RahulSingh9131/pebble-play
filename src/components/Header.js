@@ -20,7 +20,7 @@ function Header() {
                     <div className="right">
                         <nav className="nav-links flex align-center">
                             <Link to="/playlist" className='header-nav-icons'><PlaylistPlayIcon/></Link>
-                            <Link to="/" className='header-nav-icons'><Avatar /></Link>
+                            <Link to="/logout" className='header-nav-icons'><Avatar /></Link>
                         </nav>
                     </div>
                 </div>
