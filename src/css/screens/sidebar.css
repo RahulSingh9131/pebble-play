@@ -6,6 +6,8 @@
 }
 .sidebar-contents{
     margin: var(--mb-1) 0;
+    position: relative;
+    cursor: pointer;
 }
 .sidebar-contents .sidebar-links{
     color: var(--text-color-dark);
@@ -13,4 +15,33 @@
 .sidebar-contents .sidebar-links:hover{
     color: var(--red-color);
     cursor: pointer;
+}
+.tooltip-text{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: var(--text-color-dark);
+    color: var(--white-color);
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: var(--smaller-font-size);
+}
+.tooltip-text::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 7px solid;
+    border-color: #000 #0000 #0000 #0000;
+}
+.sidebar-contents:hover .tooltip-text{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
 }

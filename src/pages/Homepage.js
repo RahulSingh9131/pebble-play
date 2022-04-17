@@ -90,7 +90,7 @@ function Homepage() {
                                     <div className="content">
                                         <h3>{item.categoryName}</h3>
                                         <p>{item.description}</p>
-                                        <Link to="#" className="btn">see More</Link>
+                                        <Link to="/videopage" className="btn">see More</Link>
                                     </div>
                                 </div>
                                 )
