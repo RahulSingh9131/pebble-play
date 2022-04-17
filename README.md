@@ -13,4 +13,7 @@
 
 <h3>Instruction</h3>
 To run this app locally on your machine, first clone the repository using git clone and then install all the used dependencies in your machine, using npm i
+
+
+
 Live link of the app 👉👉- https://pebble-play.netlify.app/
