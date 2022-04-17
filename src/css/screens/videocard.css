@@ -76,3 +76,17 @@
 .filled-play{
     background-color: var(--red-color);
 }
+.videocard-playlist{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+.videocard-playlist:hover{
+    color: var(--red-color);
+}

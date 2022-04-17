@@ -19,7 +19,7 @@ function Header() {
                     </div>
                     <div className="right">
                         <nav className="nav-links flex align-center">
-                            <Link to="/" className='header-nav-icons'><PlaylistPlayIcon/></Link>
+                            <Link to="/playlist" className='header-nav-icons'><PlaylistPlayIcon/></Link>
                             <Link to="/" className='header-nav-icons'><Avatar /></Link>
                         </nav>
                     </div>
