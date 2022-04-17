@@ -1,5 +1,5 @@
 # pebble-play
- pebble-play is a video library which showcases different categories of videos with many features.I made this website using react & used Mokbee for the backend.
+ pebble-play is a video library which showcases different categories of videos with many features.I made this website using react & used Mockbee for the backend.
  <h1>Features</h1>
  * Homepage
  * videopage
