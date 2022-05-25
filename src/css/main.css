@@ -16,5 +16,6 @@
 @import url("./screens/login.css");
 @import url("./screens/signup.css");
 @import url("./screens/logout.css");
+@import url("./screens/likecard.css");
 
 @import url("./mediaqueries.css");

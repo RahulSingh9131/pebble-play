@@ -1,36 +1,36 @@
-.watchcard{
+.likecard{
     margin-bottom: 40px;
     width: 270px;
     position: relative;
 }
-.watchcard-thumbnail{
+.likecard-thumbnail{
     height: 140px;
     width: 250px;
 }
-.watchcard-thumbnail:hover{
+.likecard-thumbnail:hover{
     transform: scale(1.03);
     cursor: pointer;
 }
-.watchcard-info{
+.likecard-info{
     display: flex;
     padding-top: 10px;
 }
-.watchcard-text{
+.likecard-text{
     margin-left: 10px;
 }
-.watchcard-text h4{
+.likecard-text h4{
     margin-bottom: 5px;
     font-size: var(--normal-font-size);
 }
-.watchcard-text p{
+.likecard-text p{
     color: var(--text-color-light);
     font-size: var(--small-font-size);
 }
-.watchcard-avatar{
+.likecard-avatar{
     height: 30px !important;
     width: 30px !important;
 }
-.watchcard-delete{
+.likecard-delete{
     position: absolute;
     top: 10px;
     right: 30px;
@@ -41,6 +41,6 @@
     border-radius: 50%;
     padding: 2px;
 }
-.watchcard-like:hover{
+.likecard-like:hover{
     color: var(--red-color);
 }
