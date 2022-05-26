@@ -1,0 +1,15 @@
+.historypage-title{
+    margin: var(--mb-1) 0;
+}
+.history-heading{
+    font-size: var(--h3-font-size);
+}
+.history-button{
+    padding: 10px 1rem;
+    margin: 0 var(--mb-0-75);
+    color: var(--white-color);
+    border: none;
+    background-color: var(--primary-dark);
+    border-radius: 5px;
+    cursor: pointer;
+}

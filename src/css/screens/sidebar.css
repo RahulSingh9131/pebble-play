@@ -1,8 +1,9 @@
 .sidebar{
     padding: 7px;
     border-radius: 1rem;
-    position: absolute;
+    position: fixed;
     left: 1rem;
+    top: 8rem;
 }
 .sidebar-contents{
     margin: var(--mb-1) 0;

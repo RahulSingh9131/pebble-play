@@ -9,10 +9,14 @@ import useDocumentTitle from './useDocumentTitle';
 
 function HistoryPage() {
     useDocumentTitle("historyPage");
-    const {historyState:{historyBasket}}=useHistory();
+    const {historyState:{historyBasket},historyDispatch}=useHistory();
   return (
     <div className='historypage'>
         <Header/>
+        <div className='historypage-title flex align-center justify-center'>
+            <h3 className='history-heading'>history page</h3>
+            <button className='history-button' onClick={()=>historyDispatch({type:"CLEAR_HISTORY"})}>Clear History</button>
+        </div>
         <section className='likepage-body'>
           <div className='container'>
             <Sidebar/>

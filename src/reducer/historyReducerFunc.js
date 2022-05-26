@@ -6,6 +6,8 @@ export const historyReducerFunc=(historyState,action)=>{
         case "REMOVE_FROM_HISTORY":
             return {...historyState,
                 historyBasket:historyState.historyBasket.filter((c)=>c._id!==action.payload._id)}
+        case "CLEAR_HISTORY":
+            return {...historyState,historyBasket:[]};        
         default :
         return {historyState};            
     }
