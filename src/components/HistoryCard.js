@@ -1,6 +1,7 @@
 import { Avatar } from '@mui/material';
 import React from 'react'
 import { useHistory } from '../context/HistoryContext';
+import {Link} from "react-router-dom";
 
 function HistoryCard(videos) {
     const {_id,image,title,category,views,timestamp}=videos;
@@ -8,7 +9,9 @@ function HistoryCard(videos) {
   return (
     <div>
         <div className='watchcard' key={_id}>
-            <img className='watchcard-thumbnail' src={image} alt={title}/>
+            <Link to={`/videopage/${_id}`}>
+               <img className='watchcard-thumbnail' src={image} alt={title}/>
+            </Link>
             <div className='watchcard-info'>
                 <Avatar className="watchcard-avatar" src={image} alt={title}/>
                 <div className="watchcard-text">

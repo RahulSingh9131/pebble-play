@@ -1,0 +1,73 @@
+.singlevideo-body .container{
+    display: flex;
+    margin: 0 2.5rem;
+}
+.singlevideo-body{
+    margin-top: var(--mb-2-5);
+}
+.singlevideo-contents{
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+.singlevideo-box{
+    width: 100%;
+}
+.singlevideo-info{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.singlevideo-text{
+    display: flex;
+}
+.singlevideo-text h4{
+    margin-bottom: 5px;
+    font-size: var(--normal-font-size);
+}
+.singlevideo-text p{
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+}
+.singlevideo-avatar{
+    height: 60px !important;
+    width: 60px !important;
+    margin-right: var(--mb-2-5);
+}
+.singlevideo-button{
+    padding: 5px 7px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    color: var(--white-color);
+    background-color: var(--primary);
+}
+.singlevideo-button .button-icon{
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+}
+.singlevideo-like{
+    margin: 0 var(--mb-2-5);
+}
+.singlevideo-like:hover{
+    color: var(--red-color);
+    cursor: pointer;
+}
+.filled-like{
+    color: var(--red-color);
+}
+.filled-play{
+    background-color: var(--red-color);
+}
+.singlevideo-playlist{
+    margin: 0 var(--mb-2-5);
+}
+.singlevideo-playlist:hover{
+    color: var(--red-color);
+    cursor: pointer;
+}

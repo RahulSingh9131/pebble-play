@@ -12,6 +12,7 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import LogoutPage from "./pages/LogoutPage";
 import PageNotFound from "./pages/PageNotFound";
+import SingleVideoPage from "./pages/SingleVideoPage";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/likepage" element={<Likepage/>}/>
         <Route path="/watchlater" element={<WatchLater/>}/>
         <Route path="/videopage" element={<VideoPage/>}/>
+        <Route path="videopage/:videoId" element={<SingleVideoPage/>}/>
         <Route path="/mock-api" element={<MockAPI/>}/>
         <Route path="/" element={<Homepage/>}/>
       </Routes>

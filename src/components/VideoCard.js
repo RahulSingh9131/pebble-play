@@ -13,6 +13,7 @@ import "../css/main.css";
 import { useLike } from '../context/LikeContext';
 import { useHistory } from '../context/HistoryContext';
 import { usePlaylist } from '../context/PlaylistContext';
+import {Link} from "react-router-dom";
 
 function VideoCard(videos) {
   const {_id,image,title,views,timestamp,category}=videos;
@@ -36,14 +37,16 @@ function VideoCard(videos) {
 
   return (
     <div className='videocard' key={_id}>
+      <Link to={`/videopage/${_id}`}>
         <img className='videocard-thumbnail' src={image} alt={title}/>
         {
           historyBasket.some((c)=>c._id===videos._id)?(
             <PlayArrowIcon className='videocard-play filled-play'/>
           ):(
-            <PlayCircleIcon className='videocard-play' onClick={()=>historyDispatch({type:"ADD_TO_HISTORY",payload:videos})}/>
+            <PlayCircleIcon className='videocard-play'/>
           )
         }
+      </Link>
         <div className='videocard-info'>
             <Avatar className="videocard-avatar" src={image} alt={title}/>
             {
