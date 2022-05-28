@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import DeleteIcon from '@mui/icons-material/Delete';
+import CloseIcon from '@mui/icons-material/Close';
 import "../css/main.css";
 import { usePlaylist } from '../context/PlaylistContext';
 
@@ -35,11 +35,11 @@ function PlaylistModal({show}) {
   }
 
   return (
-    <div className="modal-wrapper">
-      <div className='modal'>
+    <div className="modal-wrapper" onClick={()=>setShowModal(false)}>
+      <div className='modal' onClick={(e)=>e.stopPropagation()}>
          <div className='modal-header flex justify-space align-center'>
             <h3 className='modal-text'>Add videos to playlist...</h3>
-            <DeleteIcon className='modal-delete-icon' onClick={()=>setShowModal(false)}/>
+            <CloseIcon className='modal-delete-icon' onClick={()=>setShowModal(false)}/>
          </div>
          <div>
            {playlist.map((elem)=>{
