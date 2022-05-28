@@ -20,7 +20,7 @@ import useDocumentTitle from './useDocumentTitle';
 
 function SingleVideoPage() {
     const {videoId}=useParams();
-    const {videos}=useVideos();
+    const {videoState:{videos}}=useVideos();
     const [singleVideoDetail,setSinglevideoDetail]=useState({});
 
     const {watchState:{watchBasket},watchDispatch}=useWatch();

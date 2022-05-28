@@ -45,7 +45,16 @@
     .playlist-btn{
         padding: .5rem 1rem;
     }
-    .playlistcard :link{
+    .playlistcard :link,
+    .videocard :link,
+    .watchcard :link,
+    .likecard :link,
+    .videoinlist :link{
         display: inline-block;
+    }
+    .category-tab{
+        margin: var(--mb-0-5) var(--mb-0-75);
+        padding: 7px 10px;
+        font-size: var(--smaller-font-size);
     }
 }
