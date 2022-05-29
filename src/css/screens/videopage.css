@@ -25,3 +25,15 @@
 .videopage-body{
     margin-top: var(--mb-2-5);
 }
+.category-tab{
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--white-color);
+    background-color: var(--secondary-dark);
+    box-shadow: var(--box-shadow);
+    padding: 10px 1rem;
+    margin: var(--mb-1);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
