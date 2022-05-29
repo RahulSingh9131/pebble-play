@@ -25,10 +25,6 @@
 .videopage-body{
     margin-top: var(--mb-2-5);
 }
-/* .tabs-container{
-    background-color: red;
-    margin: var(--mb-1) auto;
-} */
 .category-tab{
     border: none;
     border-radius: 1.5rem;
