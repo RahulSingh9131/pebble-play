@@ -29,5 +29,6 @@
 
 ******************
 <h3>Some Preview Images</h3>
-![pebble-home](https://user-images.githubusercontent.com/87935709/170920551-aa410229-263b-465e-885a-92cb749cd23c.JPG)
-![pebble-video](https://user-images.githubusercontent.com/87935709/170920573-43ad021e-ffbb-47c6-9272-1313add8cfbf.JPG)
+
+![pebble-home](https://user-images.githubusercontent.com/87935709/170921130-38ce6995-773f-4267-ba60-747e1068ee9b.JPG)
+![pebble-video](https://user-images.githubusercontent.com/87935709/170921173-f52e5e36-8577-4d1f-8770-ba74d3041363.JPG)
