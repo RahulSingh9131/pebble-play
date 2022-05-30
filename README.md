@@ -7,8 +7,8 @@
   <li>I have used react for building this.</li>
   <li>This app is using mockbee as a  database</li>
   <li>Also added my  very own component library for styling components</li>
-  <li>User context API for state management</li>
-  <li>Added react-player for pleying videos from youtube</li>
+  <li>Used context API along with reducers for state management</li>
+  <li>Added react-player for playing videos from youtube</li>
 </ul>
 
 *******************
@@ -18,7 +18,7 @@
   <li>User can signUp and login with their credentials.</li>
   <li>User can filter videos based on the categories </li>
   <li>User can watch videos in a single video page</li>
-  <li>User can can like a particular video</li>
+  <li>User can like a particular video</li>
   <li>User can create their very own playlist and add videos in it.</li>
 </ul>
 
